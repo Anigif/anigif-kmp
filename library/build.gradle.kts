@@ -15,7 +15,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                // multiplatform dependencies
+                implementation(libs.kotlin.coroutines.core)
             }
         }
         val commonTest by getting {

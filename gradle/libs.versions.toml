@@ -1,7 +1,9 @@
 [versions]
 kotlin = "2.1.0"
+kotlinCoroutines = "1.10.1"
 
 [libraries]
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 
 [plugins]
