@@ -3,8 +3,16 @@ package dk.anigif.kmp.flow
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 
+/**
+ * Functions working like [Flow.combine] but with more than 5 flows of divergent types.
+ *
+ * The implementation is to a great extent inspired by this answer: https://stackoverflow.com/a/67939655/2761541
+ */
 object ExtendedCombine {
-    // https://stackoverflow.com/a/67939655/2761541
+
+    /**
+     * Working like [Flow.combine] but with 6 flows of divergent types.
+     */
     fun <T1, T2, T3, T4, T5, T6, R> extendedCombine(
         flow1: Flow<T1>,
         flow2: Flow<T2>,
@@ -27,6 +35,9 @@ object ExtendedCombine {
         )
     }
 
+    /**
+     * Working like [Flow.combine] but with 7 flows of divergent types.
+     */
     fun <T1, T2, T3, T4, T5, T6, T7, R> extendedCombine(
         flow1: Flow<T1>,
         flow2: Flow<T2>,
@@ -52,6 +63,9 @@ object ExtendedCombine {
         )
     }
 
+    /**
+     * Working like [Flow.combine] but with 8 flows of divergent types.
+     */
     fun <T1, T2, T3, T4, T5, T6, T7, T8, R> extendedCombine(
         flow1: Flow<T1>,
         flow2: Flow<T2>,
@@ -79,6 +93,9 @@ object ExtendedCombine {
         )
     }
 
+    /**
+     * Working like [Flow.combine] but with 9 flows of divergent types.
+     */
     fun <T1, T2, T3, T4, T5, T6, T7, T8, T9, R> extendedCombine(
         flow1: Flow<T1>,
         flow2: Flow<T2>,
