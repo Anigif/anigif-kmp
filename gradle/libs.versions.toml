@@ -1,8 +1,10 @@
 [versions]
+kermit = "2.0.4"
 kotlin = "2.1.0"
 kotlinCoroutines = "1.10.1"
 
 [libraries]
+kermit = { group = "co.touchlab", name = "kermit", version.ref = "kermit" }
 kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 
