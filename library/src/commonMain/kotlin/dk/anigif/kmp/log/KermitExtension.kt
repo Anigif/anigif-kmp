@@ -12,8 +12,9 @@ object KermitExtension {
      * callstack of this log statement. Make sure to use a relevant [LogWriter] (like [UnexpectedLogWriter]) to add any
      * special handling of the log entry.
      *
-     * Note that this is inline to ensure we get the correct place of cause, but this won't give the correct line
-     * number. See youtrack.jetbrains.com/issue/KT-8628 for more information
+     * Note that this is inline to get a better root of the stacktrace (which for instance is better when grouping the
+     * entries in Crashlytics) - otherwise the stacktrace will lead to this function. It however won't give the correct
+     * line number - see jetbrains.com/issue/KT-8628 for more information
      */
     @Suppress("NOTHING_TO_INLINE", "KotlinRedundantDiagnosticSuppress")
     inline fun Logger.unexpected(messageString: String, throwable: Throwable? = null, tag: String = this.tag) {
