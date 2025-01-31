@@ -58,6 +58,7 @@ private fun KotlinMultiplatformExtension.setupTargets() {
     // (WASI was removed as it isn't supported by Kermit at the moment)
 
     jvm()
+    jvmToolchain(17)
 
     iosArm64() // iOS device
     iosSimulatorArm64() // iOS simulator (on Apple Silicon machine)
