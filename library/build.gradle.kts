@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "dk.anigif"
-version = "0.2.0"
+version = "0.3.0-dev"
 val baseArtifactId = "anigif-kmp"
 
 kotlin {
